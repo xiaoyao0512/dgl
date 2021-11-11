@@ -34,7 +34,7 @@ import numpy as np
 import re
 import os
 import logging
-#import programl as pg
+import programl as pg
 
 from extractor_c import CExtractor
 from config import Config

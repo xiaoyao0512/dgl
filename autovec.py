@@ -33,10 +33,10 @@ from ray.rllib.agents import ppo
 from envs.neurovec import NeuroVectorizerEnv
 from ray.tune.registry import register_env
 from ray.tune.logger import TBXLogger
-from gnn import GCNClassifier
+from gnn import FullyConnectedNetwork
 from ray.rllib.models import ModelCatalog
 
-ModelCatalog.register_custom_model("gnn_model", GCNClassifier)
+ModelCatalog.register_custom_model("gnn_model", FullyConnectedNetwork)
 
 
 ray.init()
